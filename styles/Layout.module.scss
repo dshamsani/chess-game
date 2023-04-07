@@ -1,7 +1,35 @@
 .board {
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+}
+
+.black {
+    background-color: #b7c0d8;
+}
+
+.white {
+    background-color: #e8edf9;
+}
+
+.selected {
+    background-color: #7b61ff;
+}
+
+.available {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #7b61ff;
+}
+
+.lost {
+    height: calc(40vh - 60px);
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+    margin-left: 50px;
+    background-color: #e8edf9;
 }
